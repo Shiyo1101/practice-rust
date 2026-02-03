@@ -1,0 +1,25 @@
+[workspace]
+members = [
+    "chapters/ch01_hello_world",
+    "chapters/ch02_guessing_game",
+    "chapters/ch03_common_concepts",
+    "chapters/ch04_ownership",
+    "chapters/ch05_structs",
+    "chapters/ch06_enums",
+    "chapters/ch07_modules",
+    "chapters/ch08_collections",
+    "chapters/ch09_error_handling",
+    "chapters/ch10_generics_traits_lifetimes",
+    "chapters/ch11_testing",
+    "chapters/ch12_io_project",
+    "chapters/ch13_functional_features",
+    "chapters/ch14_cargo_and_crates",
+    "chapters/ch15_smart_pointers",
+    "chapters/ch16_concurrency",
+    "chapters/ch17_oop",
+    "chapters/ch18_patterns",
+    "chapters/ch19_advanced",
+    "chapters/ch20_final_project",
+]
+
+resolver = "2"
