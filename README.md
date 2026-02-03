@@ -2,6 +2,8 @@
 
 Rust The Book の学習用
 
+参考：[The Book日本語版](https://doc.rust-jp.rs/book-ja/)
+
 ## 使い方
 
 - 章フォルダは [chapters](chapters) にあります。
