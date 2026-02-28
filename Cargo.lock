@@ -34,6 +34,9 @@ dependencies = [
 [[package]]
 name = "ch03_common_concepts"
 version = "0.1.0"
+dependencies = [
+ "rand",
+]
 
 [[package]]
 name = "ch04_ownership"
