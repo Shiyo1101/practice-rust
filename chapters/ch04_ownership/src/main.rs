@@ -30,11 +30,11 @@ fn borrowing_concept() {
 
     // 不変参照を渡す（借用）
     let len = calculate_length(&s);
-    println!("The length of '{}' is {}.", s, len);
+    println!("The length of '{s}' is {len}.");
 
     // 可変参照を渡す（ミュータブルな借用）
     change(&mut s);
-    println!("Changed string: {}", s);
+    println!("Changed string: {s}");
 }
 
 fn calculate_length(s: &String) -> usize {
@@ -54,10 +54,10 @@ fn slice_concept() {
     // 文字列スライス（一部分の参照）
     let hello = &s[0..5];
     let world = &s[6..11];
-    println!("slice1: {}, slice2: {}", hello, world);
+    println!("slice1: {hello}, slice2: {world}");
 
     let word = first_word(&s);
-    println!("The first word is: {}", word);
+    println!("The first word is: {word}");
 }
 
 fn first_word(s: &str) -> &str {
