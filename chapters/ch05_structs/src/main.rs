@@ -20,6 +20,10 @@ impl Rectangle {
     fn get_height(&self) -> u32 {
         self.height
     }
+
+    fn can_hold(&self, other: &Rectangle) -> bool {
+        self.width > other.width && self.height > other.height
+    }
 }
 
 fn main() {
@@ -38,4 +42,22 @@ fn main() {
         "The height of the rectangle is {} pixels.",
         rect.get_height()
     );
+
+    let reac1 = Rectangle {
+        width: 30,
+        height: 50,
+    };
+
+    let reac2 = Rectangle {
+        width: 10,
+        height: 40,
+    };
+
+    let reac3 = Rectangle {
+        width: 60,
+        height: 45,
+    };
+
+    println!("Can reac1 hold reac2? {}", reac1.can_hold(&reac2)); // -> true
+    println!("Can reac1 hold reac3? {}", reac1.can_hold(&reac3)); // -> false
 }
