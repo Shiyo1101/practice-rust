@@ -6,6 +6,9 @@ struct Rectangle {
 }
 
 impl Rectangle {
+    // 引数selfは、Rectangle構造体のインスタンスを指す参照です。
+    // 実際は self: &Self と書くこともできますが、慣習的にselfとだけ書かれます。
+    // Rust処理系は、selfが構造体のインスタンスを指すことを理解しているためコンパイルエラーにはなりません。
     fn area(&self) -> u32 {
         self.width * self.height
     }
